@@ -24,8 +24,201 @@ button {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
   display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 1168px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  ____________ HEADER ____________ */
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+.italic-part {
+  font-style: italic;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+/* ____________ HERO ____________ */
+.hero-wrapper {
+  border-radius: 30px;
+  max-width: 1200px;
+  height: 600px;
+  background-color: #1e1823;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 14px 40px;
+  border-radius: 100px;
+  padding: 14px 40px;
+  background-color: #fd9222;
+  border: none;
+}
+
+.how-its-made-scroll {
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  padding: 14px 40px;
+}
+
+.scroll-downd-link {
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+
+/* ____________ OUR BENEFITS ____________ */
+.benefits-wrapper {
+  max-width: 1200px;
+  background-color: #1e1823;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+/* Hidden title */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefit-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.benefit-descr {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ____________ INGREDIENTS ____________ */
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.orange-part {
+  color: #fd9222;
+}
+
+.section-text {
+  text-align: center;
+}
+
+.ingredient-img-descr {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ingredients-list-item:nth-child(odd) .ingredient-img-descr {
+  background-color: teal;
+  color: #fff;
+}
+
+/* ____________ HOW IT'S MADE? ____________ */
+.recipe-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+/* ____________ REWIEVS ____________ */
+.rewiver-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.rewiev-text {
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.rewiev-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  background-color: transparent;
+}
+
+/* ____________ FOOTER ____________ */
+.footer-wrapper {
+  max-width: 1200px;
+  background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.contact-title {
+  font-weight: 500;
 }

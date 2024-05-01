@@ -21,11 +21,13 @@
   </head>
 
   <body>
-    <!-- __________ HEADER __________ -->
+    <!-- ____________ HEADER ____________ -->
     <header>
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo">SIMPLY CHOCOLATE</a>
+          <a href="./index.html" class="logo"
+            ><span class="italic-part">SIMPLY</span> CHOCOLATE</a
+          >
 
           <ul class="nav-list">
             <li class="nav-list-item">
@@ -47,7 +49,7 @@
     <!-- ____________ MAIN ____________ -->
     <main>
       <!-- ____________ HERO ____________ -->
-      <section>
+      <section class="hero-wrapper">
         <div class="container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -56,16 +58,16 @@
 
           <button type="button" class="hero-btn">Buy now</button>
 
-          <a href="#how-its-made" class="">How it’s made</a>
+          <a href="#how-its-made" class="how-its-made-scroll">How it’s made</a>
 
           <a href="#benefits" class="scroll-downd-link">Scroll down</a>
         </div>
       </section>
 
       <!-- ____________ OUR BENEFITS ____________ -->
-      <section id="benefits">
+      <section id="benefits" class="benefits-wrapper">
         <div class="container">
-          <h2 class="section-title">Our benefits</h2>
+          <h2 class="section-title visually-hidden">Our benefits</h2>
 
           <ul class="benefits-list">
             <li class="benefits-list-item">
@@ -109,10 +111,11 @@
       <section>
         <div class="container">
           <h2 class="section-title">
-            It all ads up to one exceptional taste sensation
+            It all ads up to one exceptional
+            <span class="orange-part">taste</span> sensation
           </h2>
 
-          <p>
+          <p class="section-text">
             At Simply Chocolate, we believe that the secret to exceptional
             chocolate is in the details. From the sourcing of the finest
             ingredients to the careful crafting of each individual piece, every
@@ -174,7 +177,9 @@
       <!-- ____________ HOW IT'S MADE? ____________ -->
       <section id="how-its-made">
         <div class="container">
-          <h2 class="section-title">How it’s made?</h2>
+          <h2 class="section-title">
+            How it’s <span class="orange-part">made?</span>
+          </h2>
           <img
             src="./images/how-its-made/choclolate.png"
             alt="Chocolate image"
@@ -225,64 +230,72 @@
 
       <!-- ____________ REWIEVS ____________ -->
       <section id="rewievs">
-        <h2 class="section-title">Chocolate is loved</h2>
+        <div class="container">
+          <h2 class="section-title">
+            <span class="orange-part">Chocolate</span> is loved
+          </h2>
 
-        <ul class="rewievs-list">
-          <li class="rewiews-list-item">
-            <img
-              src="./images/rewievs/victoria-dobrzhanska-photo.png"
-              alt="Victoria Dobrzhanska photo"
-              class="rewiever-img"
-            />
+          <ul class="rewievs-list">
+            <li class="rewiews-list-item">
+              <img
+                src="./images/rewievs/victoria-dobrzhanska-photo.png"
+                alt="Victoria Dobrzhanska photo"
+                class="rewiever-img"
+              />
 
-            <h3 class="rewiver-name">Victoria Dobrzhanska</h3>
+              <h3 class="rewiver-name">Victoria Dobrzhanska</h3>
 
-            <p class="rewiev-text">
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
-            </p>
-          </li>
+              <p class="rewiev-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
 
-          <li class="rewiews-list-item">
-            <img
-              src="./images/rewievs/nazar-babenko-photo.png"
-              alt="Nazar Babenko photo"
-              class="rewiever-img"
-            />
+            <li class="rewiews-list-item">
+              <img
+                src="./images/rewievs/nazar-babenko-photo.png"
+                alt="Nazar Babenko photo"
+                class="rewiever-img"
+              />
 
-            <h3 class="rewiver-name">Nazar Babenko</h3>
+              <h3 class="rewiver-name">Nazar Babenko</h3>
 
-            <p class="rewiev-text">
-              This chocolate confection is a delight! A delight! The wafer is
-              light and crisp, the hazelnut cream is smooth, and the chocolate
-              is good.
-            </p>
-          </li>
+              <p class="rewiev-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
 
-          <li class="rewiews-list-item">
-            <img
-              src="./images/rewievs/olena-kampusch-photo.png"
-              alt="Olena Kampusch photo"
-              class="rewiever-img"
-            />
+            <li class="rewiews-list-item">
+              <img
+                src="./images/rewievs/olena-kampusch-photo.png"
+                alt="Olena Kampusch photo"
+                class="rewiever-img"
+              />
 
-            <h3 class="rewiver-name">Olena Kampusch</h3>
+              <h3 class="rewiver-name">Olena Kampusch</h3>
 
-            <p class="rewiev-text">
-              Chocolate is a family favourite treat. Love the delicious smooth
-              chocolate and the creaminess inside. The wafer is soft but
-              crunchy.
-            </p>
-          </li>
-        </ul>
-        <button type="button" class="rewiev-btn">Leave a review</button>
+              <p class="rewiev-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="rewiev-btn">Leave a review</button>
+        </div>
       </section>
     </main>
+
     <!-- ____________ FOOTER ____________ -->
-    <footer>
+    <footer class="footer-wrapper">
       <div class="container">
         <div class="footer-top-part">
-          <h2 class="footer-title">Chocolate a delicious cure for a bad day</h2>
+          <h2 class="footer-title">
+            <span class="orange-part">Chocolate</span> a delicious cure for a
+            bad day
+          </h2>
 
           <address class="footer-address">
             <p class="contact-title">Contact us</p>
@@ -304,8 +317,6 @@
         </div>
 
         <nav class="footer-nav">
-          <a href="./index.html" class="logo">SIMPLY CHOCOLATE</a>
-
           <ul class="nav-list">
             <li class="nav-list-item">
               <a href="./index.html" class="nav-link">Home</a>
