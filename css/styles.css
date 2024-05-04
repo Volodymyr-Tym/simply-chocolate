@@ -49,32 +49,96 @@ body {
   margin-right: auto;
 }
 
+.section-paddings {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /*  ____________ HEADER ____________ */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 24px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
 }
 .italic-part {
   font-style: italic;
 }
 
+.logo-icon {
+  stroke: #fd9222;
+  margin-left: 4px;
+}
+
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover {
+  color: #fd9222;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  line-height: 0;
+  margin-left: 90px;
+}
+
+.socials-item-link {
+  fill: none;
+  stroke: #111111;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-item-link:hover,
+.socials-item-link:focus {
+  stroke: #fd9222;
 }
 
 /* ____________ HERO ____________ */
 .hero-wrapper {
   border-radius: 30px;
   max-width: 1200px;
-  height: 600px;
   background-color: #1e1823;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
   color: #ffffff;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/simply-chocolate-hero.jpg);
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-container {
+  padding-top: 381px;
+  padding-bottom: 40px;
+  padding-left: 56px;
+  padding-right: 56px;
 }
 
 .hero-title {
@@ -82,6 +146,13 @@ body {
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  max-width: 484px;
+  margin-bottom: 32px;
+}
+
+.hero-interact-content {
+  display: flex;
+  align-items: center;
 }
 
 .hero-btn {
@@ -93,6 +164,13 @@ body {
   padding: 14px 40px;
   background-color: #fd9222;
   border: none;
+  margin-right: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
 .how-its-made-scroll {
@@ -101,22 +179,60 @@ body {
   border: 1px solid #ffffff;
   border-radius: 100px;
   padding: 14px 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.how-its-made-scroll:hover {
+  border-color: #fd9222;
+  color: #fd9222;
 }
 
 .scroll-downd-link {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.scroll-downd-link:hover {
+  color: #fd9222;
+}
+
+.scroll-downd-link-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fd9222;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-downd-link:hover .scroll-downd-link-icon-wrapper {
+  background-color: #fd9222;
+  fill: #ffffff;
 }
 
 /* ____________ OUR BENEFITS ____________ */
 .benefits-wrapper {
   max-width: 1200px;
   background-color: #1e1823;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+}
+
+.benefits-container {
+  padding-right: 34px;
+  padding-left: 34px;
 }
 
 /* Hidden title */
@@ -134,6 +250,42 @@ body {
   overflow: hidden;
 }
 
+.benefits-list {
+  display: flex;
+  column-gap: 70px;
+}
+
+.benefits-list-item {
+  max-width: calc((100% - 140px) / 3);
+  position: relative;
+}
+
+.benefits-list-item:not(:last-child) {
+  padding-right: 18px;
+}
+
+.benefits-list-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 50%;
+  width: 1px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.benefit-icon-wrapper {
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .benefit-title {
   font-weight: 600;
   font-size: 18px;
@@ -145,6 +297,10 @@ body {
 }
 
 /* ____________ INGREDIENTS ____________ */
+.ingredisents {
+  margin-top: 50px;
+}
+
 .section-title {
   font-weight: 600;
   font-size: 24px;
@@ -152,13 +308,50 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  max-width: 411px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 .orange-part {
   color: #fd9222;
 }
 
+.ingredients-section-title {
+  margin-bottom: 28px;
+}
+
 .section-text {
   text-align: center;
+  max-width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.ingredients-list {
+  display: flex;
+  column-gap: 19px;
+  flex-wrap: wrap;
+}
+
+.ingredients-list-item {
+  padding: 28px 32px;
+  max-width: calc((100% - 57px) / 4);
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.ingredients-list-item:nth-child(4n - 3) {
+  background-color: #fd9222;
+}
+
+.ingredients-list-item:nth-child(4n - 1) {
+  background-color: #1e1823;
+}
+
+.ingredient-img {
+  margin-bottom: 36px;
 }
 
 .ingredient-img-descr {
@@ -167,23 +360,72 @@ body {
 }
 
 .ingredients-list-item:nth-child(odd) .ingredient-img-descr {
-  background-color: teal;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* ____________ HOW IT'S MADE? ____________ */
+.how-its-made-content-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.how-its-made-description-wrapper {
+  border-radius: 15px;
+  max-width: 516px;
+  padding: 32px;
+  background-color: #ffffff;
+}
 .recipe-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  padding-bottom: 28px;
+  max-width: 340px;
+}
+.recipe-steps:not(:last-child) {
+  padding-bottom: 24px;
+}
+
+.steps-descr {
+  padding-left: 16px;
 }
 
 /* ____________ REWIEVS ____________ */
+.rewiev-title {
+  margin-bottom: 91px;
+}
+
+.rewievs-list {
+  display: flex;
+  column-gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.rewiews-list-item {
+  max-width: calc((100% - 56px) / 3);
+  position: relative;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding-top: 56px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.rewiever-img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .rewiver-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .rewiev-text {
@@ -194,11 +436,21 @@ body {
 .rewiev-btn {
   font-weight: 600;
   font-size: 18px;
-  color: #111;
+  color: #111111;
   border: 1px solid #fd9222;
   border-radius: 100px;
   padding: 14px 40px;
   background-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rewiev-btn:hover,
+.rewiev-btn:focus {
+  background-color: #fd9222;
+  color: #ffffff;
 }
 
 /* ____________ FOOTER ____________ */
@@ -206,10 +458,18 @@ body {
   max-width: 1200px;
   background-color: #1e1823;
   padding-top: 50px;
-  padding-bottom: 86px;
+  padding-bottom: 50px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+}
+
+.footer-top-part {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-title {
@@ -217,8 +477,27 @@ body {
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.02em;
+  max-width: 300px;
 }
 
 .contact-title {
   font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.contact-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #fd9222;
+}
+
+.footer-nav-link {
+  padding-bottom: 0;
+  padding-top: 24px;
 }

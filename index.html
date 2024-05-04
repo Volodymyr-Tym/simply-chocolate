@@ -25,21 +25,42 @@
     <header>
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo"
-            ><span class="italic-part">SIMPLY</span> CHOCOLATE</a
-          >
+          <a class="logo" href="./index.html">
+            <span class="italic-part">SIMPLY&nbsp;</span> CHOCOLATE
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-chocolate-logo"></use>
+            </svg>
+          </a>
 
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-link">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
 
             <li class="nav-list-item">
-              <a href="#how-its-made" class="nav-link">How it’s made?</a>
+              <a class="nav-link" href="#how-its-made">How it’s made?</a>
             </li>
 
             <li class="nav-list-item">
-              <a href="#rewievs" class="nav-link">Chocolate is loved</a>
+              <a class="nav-link" href="#rewievs">Chocolate is loved</a>
+            </li>
+          </ul>
+
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-item-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a class="socials-item-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
@@ -50,27 +71,42 @@
     <main>
       <!-- ____________ HERO ____________ -->
       <section class="hero-wrapper">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
 
-          <button type="button" class="hero-btn">Buy now</button>
+          <div class="hero-interact-content">
+            <button class="hero-btn" type="button">Buy now</button>
 
-          <a href="#how-its-made" class="how-its-made-scroll">How it’s made</a>
+            <a class="how-its-made-scroll" href="#how-its-made"
+              >How it’s made</a
+            >
 
-          <a href="#benefits" class="scroll-downd-link">Scroll down</a>
+            <a class="scroll-downd-link" href="#benefits"
+              >Scroll down<span class="scroll-downd-link-icon-wrapper">
+                <svg class="scroll-downd-link-icon" width="22" height="22">
+                  <use href="./images/icons.svg#icon-scroll-down"></use>
+                </svg> </span
+            ></a>
+          </div>
         </div>
       </section>
 
       <!-- ____________ OUR BENEFITS ____________ -->
-      <section id="benefits" class="benefits-wrapper">
-        <div class="container">
+      <section class="benefits-wrapper" id="benefits">
+        <div class="container benefits-container">
           <h2 class="section-title visually-hidden">Our benefits</h2>
 
           <ul class="benefits-list">
             <li class="benefits-list-item">
+              <div class="benefit-icon-wrapper">
+                <svg class="benefit-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-chocolate-bar"></use>
+                </svg>
+              </div>
+
               <h3 class="benefit-title">Unsurpassed taste</h3>
 
               <p class="benefit-descr">
@@ -82,6 +118,12 @@
             </li>
 
             <li class="benefits-list-item">
+              <div class="benefit-icon-wrapper">
+                <svg class="benefit-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
+
               <h3 class="benefit-title">Affordable price</h3>
 
               <p class="benefit-descr">
@@ -94,6 +136,12 @@
             </li>
 
             <li class="benefits-list-item">
+              <div class="benefit-icon-wrapper">
+                <svg class="benefit-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
+
               <h3 class="benefit-title">Own production</h3>
 
               <p class="benefit-descr">
@@ -108,9 +156,9 @@
       </section>
 
       <!-- ____________ INGREDIENTS ____________ -->
-      <section>
+      <section class="ingredisents section-paddings">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title ingredients-section-title">
             It all ads up to one exceptional
             <span class="orange-part">taste</span> sensation
           </h2>
@@ -125,9 +173,9 @@
           <ul class="ingredients-list">
             <li class="ingredients-list-item">
               <img
+                class="ingredient-img"
                 src="./images/ingredients/milk-chocolate.png"
                 alt="Milk chocolate image"
-                class="ingredient-img"
                 width="206"
                 height="160"
               />
@@ -137,9 +185,9 @@
 
             <li class="ingredients-list-item">
               <img
+                class="ingredient-img"
                 src="./images/ingredients/milk.png"
                 alt="Milk image"
-                class="ingredient-img"
                 width="206"
                 height="160"
               />
@@ -149,9 +197,9 @@
 
             <li class="ingredients-list-item">
               <img
+                class="ingredient-img"
                 src="./images/ingredients/nuts.png"
                 alt="Nuts image"
-                class="ingredient-img"
                 width="206"
                 height="160"
               />
@@ -161,9 +209,9 @@
 
             <li class="ingredients-list-item">
               <img
+                class="ingredient-img"
                 src="./images/ingredients/semi-sweet-chocolate.png"
                 alt="Semi-sweet chocolate image"
-                class="ingredient-img"
                 width="206"
                 height="160"
               />
@@ -175,72 +223,80 @@
       </section>
 
       <!-- ____________ HOW IT'S MADE? ____________ -->
-      <section id="how-its-made">
+      <section class="section-paddings" id="how-its-made">
         <div class="container">
           <h2 class="section-title">
             How it’s <span class="orange-part">made?</span>
           </h2>
-          <img
-            src="./images/how-its-made/choclolate.png"
-            alt="Chocolate image"
-            class="recipe-img"
-            width="600"
-            height="400"
-          />
-          <h3 class="recipe-title">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="recipe-steps-list">
-            <li class="recipe-steps">
-              <p class="steps-descr">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
 
-            <li class="recipe-steps">
-              <p class="steps-descr">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
+          <div class="how-its-made-content-wrapper">
+            <img
+              class="recipe-img"
+              src="./images/how-its-made/choclolate.png"
+              alt="Chocolate image"
+              width="600"
+              height="400"
+            />
+            <div class="how-its-made-description-wrapper">
+              <h3 class="recipe-title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
 
-            <li class="recipe-steps">
-              <p class="steps-descr">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
+              <ul class="recipe-steps-list">
+                <li class="recipe-steps">
+                  <p class="steps-descr">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
 
-            <li class="recipe-steps">
-              <p class="steps-descr">
-                Heat the mixture over low heat, letting it barely boil.
-              </p>
-            </li>
+                <li class="recipe-steps">
+                  <p class="steps-descr">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
 
-            <li class="recipe-steps">
-              <p class="steps-descr">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+                <li class="recipe-steps">
+                  <p class="steps-descr">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+
+                <li class="recipe-steps">
+                  <p class="steps-descr">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+
+                <li class="recipe-steps">
+                  <p class="steps-descr">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- ____________ REWIEVS ____________ -->
-      <section id="rewievs">
+      <section class="section-paddings" id="rewievs">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title rewiev-title">
             <span class="orange-part">Chocolate</span> is loved
           </h2>
 
           <ul class="rewievs-list">
             <li class="rewiews-list-item">
               <img
+                class="rewiever-img"
                 src="./images/rewievs/victoria-dobrzhanska-photo.png"
                 alt="Victoria Dobrzhanska photo"
-                class="rewiever-img"
               />
 
               <h3 class="rewiver-name">Victoria Dobrzhanska</h3>
@@ -253,9 +309,9 @@
 
             <li class="rewiews-list-item">
               <img
+                class="rewiever-img"
                 src="./images/rewievs/nazar-babenko-photo.png"
                 alt="Nazar Babenko photo"
-                class="rewiever-img"
               />
 
               <h3 class="rewiver-name">Nazar Babenko</h3>
@@ -269,9 +325,9 @@
 
             <li class="rewiews-list-item">
               <img
+                class="rewiever-img"
                 src="./images/rewievs/olena-kampusch-photo.png"
                 alt="Olena Kampusch photo"
-                class="rewiever-img"
               />
 
               <h3 class="rewiver-name">Olena Kampusch</h3>
@@ -283,7 +339,7 @@
               </p>
             </li>
           </ul>
-          <button type="button" class="rewiev-btn">Leave a review</button>
+          <button class="rewiev-btn" type="button">Leave a review</button>
         </div>
       </section>
     </main>
@@ -302,13 +358,13 @@
 
             <ul class="contact-list">
               <li class="contact-list-item">
-                <a href="tel:+380684439426" class="contact-link"
+                <a class="contact-link" href="tel:+380684439426"
                   >+380 (68) 443-94-26</a
                 >
               </li>
 
               <li class="contact-list-item">
-                <a href="mailto:simplycthoc@gmail.com" class="contact-link"
+                <a class="contact-link" href="mailto:simplycthoc@gmail.com"
                   >simplycthoc@gmail.com</a
                 >
               </li>
@@ -319,15 +375,19 @@
         <nav class="footer-nav">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-link">Home</a>
+              <a class="nav-link footer-nav-link" href="./index.html">Home</a>
             </li>
 
             <li class="nav-list-item">
-              <a href="#how-its-made" class="nav-link">How it’s made?</a>
+              <a class="nav-link footer-nav-link" href="#how-its-made"
+                >How it’s made?</a
+              >
             </li>
 
             <li class="nav-list-item">
-              <a href="#rewievs" class="nav-link">Chocolate is loved</a>
+              <a class="nav-link footer-nav-link" href="#rewievs"
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
         </nav>
