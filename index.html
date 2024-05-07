@@ -181,6 +181,25 @@
               />
 
               <p class="ingredient-img-descr">Milk chocolate</p>
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-overlay-title">Milk chocolate</h3>
+
+                <ul class="ingredient-overlay-tags-list">
+                  <li class="ingredient-overlay-tags-list-item">chocolate</li>
+
+                  <li class="ingredient-overlay-tags-list-item">
+                    the benefits
+                  </li>
+                </ul>
+
+                <p class="ingredient-overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
 
             <li class="ingredients-list-item">
@@ -193,6 +212,27 @@
               />
 
               <p class="ingredient-img-descr">Milk</p>
+
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-overlay-title">Milk</h3>
+
+                <ul class="ingredient-overlay-tags-list">
+                  <li class="ingredient-overlay-tags-list-item">milk</li>
+
+                  <li class="ingredient-overlay-tags-list-item">
+                    the benefits
+                  </li>
+                </ul>
+
+                <p class="ingredient-overlay-text">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
             </li>
 
             <li class="ingredients-list-item">
@@ -205,6 +245,27 @@
               />
 
               <p class="ingredient-img-descr">Nuts</p>
+
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-overlay-title">Nuts</h3>
+
+                <ul class="ingredient-overlay-tags-list">
+                  <li class="ingredient-overlay-tags-list-item">nuts</li>
+
+                  <li class="ingredient-overlay-tags-list-item">
+                    the benefits
+                  </li>
+                </ul>
+
+                <p class="ingredient-overlay-text">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
             </li>
 
             <li class="ingredients-list-item">
@@ -217,6 +278,29 @@
               />
 
               <p class="ingredient-img-descr">Semi - sweet chocolate</p>
+
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-overlay-title">semi - sweet chocolate</h3>
+
+                <ul class="ingredient-overlay-tags-list">
+                  <li class="ingredient-overlay-tags-list-item">
+                    sweet chocolate
+                  </li>
+
+                  <li class="ingredient-overlay-tags-list-item">
+                    the benefits
+                  </li>
+                </ul>
+
+                <p class="ingredient-overlay-text">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -232,7 +316,7 @@
           <div class="how-its-made-content-wrapper">
             <img
               class="recipe-img"
-              src="./images/how-its-made/choclolate.png"
+              src="./images/how-its-made/chocolate.png"
               alt="Chocolate image"
               width="600"
               height="400"
@@ -373,7 +457,7 @@
         </div>
 
         <nav class="footer-nav">
-          <ul class="nav-list">
+          <ul class="nav-list footer-nav-list">
             <li class="nav-list-item">
               <a class="nav-link footer-nav-link" href="./index.html">Home</a>
             </li>
@@ -393,5 +477,94 @@
         </nav>
       </div>
     </footer>
+
+    <!-- ____________ MODAL OVERLAY ____________ -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="close-modal-btn" type="button">
+          <svg class="close-modal-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-close-cross"></use>
+          </svg>
+        </button>
+
+        <p class="modal-title">
+          Leave a review about <span class="orange-part">our chocolate</span>
+        </p>
+
+        <form class="modal-form">
+          <label class="modal-form-label">
+            Name
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+              title="Volodymyr"
+              required
+            />
+            <svg class="modal-form-input-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-label">
+            Email
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              title="example@gmail.com"
+              required
+            />
+            <svg class="modal-form-input-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-label">
+            Phone number
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-tel"
+              pattern="[+0-9]+"
+              title="Use numbers [0-9]"
+              required
+            />
+            <svg class="modal-form-input-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-label">
+            Comment
+            <textarea
+              class="modal-form-textarea"
+              name="user-comment"
+              placeholder="Enter text"
+              required
+            ></textarea>
+          </label>
+
+          <label class="modal-form-privacy-label">
+            <input
+              class="privacy-policy-checkbox visually-hidden"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <span class="own-checkbox-square">
+              <svg class="own-checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-check-mark"></use>
+              </svg> </span
+            >I accept the terms and conditions of the
+            <a class="privacy-policy-link" href="">Privacy Policy</a>
+          </label>
+
+          <button class="send-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
