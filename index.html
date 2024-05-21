@@ -18,16 +18,23 @@
     />
     <title>Simply Chocolate</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
-    <!-- ____________ HEADER ____________ -->
-    <header>
-      <div class="container">
+    <!-- =============================================
+                HEADER
+    ============================================ -->
+
+    <header class="page-header">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="logo" href="./index.html">
             <span class="italic-part">SIMPLY&nbsp;</span> CHOCOLATE
-            <svg class="logo-icon" width="24" height="24">
+            <svg class="logo-icon">
               <use href="./images/icons.svg#icon-chocolate-logo"></use>
             </svg>
           </a>
@@ -45,31 +52,37 @@
               <a class="nav-link" href="#rewievs">Chocolate is loved</a>
             </li>
           </ul>
-
-          <ul class="socials-list">
-            <li class="socials-item">
-              <a class="socials-item-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials-item">
-              <a class="socials-item-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </nav>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-item-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials-item">
+            <a class="socials-item-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <!-- ____________ MAIN ____________ -->
     <main>
-      <!-- ____________ HERO ____________ -->
+      <!-- =============================================
+                  HERO
+      ============================================ -->
+
       <section class="hero-wrapper">
         <div class="container hero-container">
           <h1 class="hero-title">
@@ -86,15 +99,17 @@
 
             <a class="scroll-downd-link" href="#benefits"
               >Scroll down<span class="scroll-downd-link-icon-wrapper">
-                <svg class="scroll-downd-link-icon" width="22" height="22">
+                <svg class="scroll-downd-link-icon">
                   <use href="./images/icons.svg#icon-scroll-down"></use>
                 </svg> </span
             ></a>
           </div>
         </div>
       </section>
+      <!-- =============================================
+                  OUR BENEFITS
+      ============================================ -->
 
-      <!-- ____________ OUR BENEFITS ____________ -->
       <section class="benefits-wrapper" id="benefits">
         <div class="container benefits-container">
           <h2 class="section-title visually-hidden">Our benefits</h2>
@@ -154,8 +169,10 @@
           </ul>
         </div>
       </section>
+      <!-- =============================================
+                  INGREDIENTS
+      ============================================ -->
 
-      <!-- ____________ INGREDIENTS ____________ -->
       <section class="ingredisents section-paddings">
         <div class="container">
           <h2 class="section-title ingredients-section-title">
@@ -172,13 +189,29 @@
 
           <ul class="ingredients-list">
             <li class="ingredients-list-item">
-              <img
-                class="ingredient-img"
-                src="./images/ingredients/milk-chocolate.png"
-                alt="Milk chocolate image"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/milk-chocolate-desktop.png    1x,
+                    ./images/ingredients/milk-chocolate-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                  width="206"
+                  height="160"
+                />
+
+                <img
+                  class="ingredient-img"
+                  srcset="
+                    ./images/ingredients/milk-chocolate.png    1x,
+                    ./images/ingredients/milk-chocolate@2x.png 2x
+                  "
+                  src="./images/ingredients/milk-chocolate.png"
+                  width="224"
+                  height="171"
+                  alt="Milk chocolate image"
+                />
+              </picture>
 
               <p class="ingredient-img-descr">Milk chocolate</p>
               <div class="ingredient-overlay">
@@ -203,13 +236,29 @@
             </li>
 
             <li class="ingredients-list-item">
-              <img
-                class="ingredient-img"
-                src="./images/ingredients/milk.png"
-                alt="Milk image"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/milk-desktop.png    1x,
+                    ./images/ingredients/milk-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                  width="206"
+                  height="160"
+                />
+
+                <img
+                  class="ingredient-img"
+                  srcset="
+                    ./images/ingredients/milk.png    1x,
+                    ./images/ingredients/milk@2x.png 2x
+                  "
+                  src="./images/ingredients/milk.png"
+                  width="224"
+                  height="171"
+                  alt="Milk image"
+                />
+              </picture>
 
               <p class="ingredient-img-descr">Milk</p>
 
@@ -236,13 +285,29 @@
             </li>
 
             <li class="ingredients-list-item">
-              <img
-                class="ingredient-img"
-                src="./images/ingredients/nuts.png"
-                alt="Nuts image"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/nuts-desktop.png    1x,
+                    ./images/ingredients/nuts-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                  width="206"
+                  height="160"
+                />
+
+                <img
+                  class="ingredient-img"
+                  srcset="
+                    ./images/ingredients/nuts.png    1x,
+                    ./images/ingredients/nuts@2x.png 2x
+                  "
+                  src="./images/ingredients/nuts.png"
+                  width="224"
+                  height="171"
+                  alt="Nuts image"
+                />
+              </picture>
 
               <p class="ingredient-img-descr">Nuts</p>
 
@@ -269,13 +334,29 @@
             </li>
 
             <li class="ingredients-list-item">
-              <img
-                class="ingredient-img"
-                src="./images/ingredients/semi-sweet-chocolate.png"
-                alt="Semi-sweet chocolate image"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/semi-sweet-chocolate-desktop.png    1x,
+                    ./images/ingredients/semi-sweet-chocolate-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                  width="206"
+                  height="160"
+                />
+
+                <img
+                  class="ingredient-img"
+                  srcset="
+                    ./images/ingredients/semi-sweet-chocolate.png    1x,
+                    ./images/ingredients/semi-sweet-chocolate@2x.png 2x
+                  "
+                  src="./images/ingredients/semi-sweet-chocolate.png"
+                  width="224"
+                  height="171"
+                  alt="Semi-sweet chocolate image"
+                />
+              </picture>
 
               <p class="ingredient-img-descr">Semi - sweet chocolate</p>
 
@@ -305,8 +386,10 @@
           </ul>
         </div>
       </section>
+      <!-- =============================================
+                  HOW IT'S MADE?
+      ============================================ -->
 
-      <!-- ____________ HOW IT'S MADE? ____________ -->
       <section class="section-paddings" id="how-its-made">
         <div class="container">
           <h2 class="section-title">
@@ -314,13 +397,41 @@
           </h2>
 
           <div class="how-its-made-content-wrapper">
-            <img
-              class="recipe-img"
-              src="./images/how-its-made/chocolate.png"
-              alt="Chocolate image"
-              width="600"
-              height="400"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/how-its-made/chocolate-desktop.jpg    1x,
+                  ./images/how-its-made/chocolate-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1158px)"
+                width="600"
+                height="400"
+              />
+              <source
+                srcset="
+                  ./images/how-its-made/chocolate-tablet.jpg    1x,
+                  ./images/how-its-made/chocolate-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                width="614"
+                height="400"
+              />
+              <source
+                srcset="
+                  ./images/how-its-made/chocolate.jpg    1x,
+                  ./images/how-its-made/chocolate@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+                width="335"
+                height="500"
+              />
+              <img
+                class="how-its-made-img"
+                src="./images/how-its-made/chocolate.jpg"
+                alt="Chocolate image"
+              />
+            </picture>
+
             <div class="how-its-made-description-wrapper">
               <h3 class="recipe-title">
                 Try our chocolates today and discover the perfect balance of
@@ -367,13 +478,91 @@
           </div>
         </div>
       </section>
+      <!-- =============================================
+                  REWIEVS
+      ============================================ -->
 
-      <!-- ____________ REWIEVS ____________ -->
       <section class="section-paddings" id="rewievs">
         <div class="container">
           <h2 class="section-title rewiev-title">
             <span class="orange-part">Chocolate</span> is loved
           </h2>
+
+          <!-- SLIDER -->
+          <!-- Slider main container -->
+          <div class="swiper" id="my-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <img
+                    class="rewiever-img"
+                    src="./images/rewievs/victoria-dobrzhanska-photo.png"
+                    alt="Victoria Dobrzhanska photo"
+                  />
+
+                  <h3 class="rewiver-name">Victoria Dobrzhanska</h3>
+
+                  <p class="rewiev-text">
+                    I love this chocolate bar. Perfect combination of light
+                    crispy wafer, covered in a thin layer chocolate.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <img
+                    class="rewiever-img"
+                    src="./images/rewievs/nazar-babenko-photo.png"
+                    alt="Nazar Babenko photo"
+                  />
+
+                  <h3 class="rewiver-name">Nazar Babenko</h3>
+
+                  <p class="rewiev-text">
+                    This chocolate confection is a delight! A delight! The wafer
+                    is light and crisp, the hazelnut cream is smooth, and the
+                    chocolate is good.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <img
+                    class="rewiever-img"
+                    src="./images/rewievs/olena-kampusch-photo.png"
+                    alt="Olena Kampusch photo"
+                  />
+
+                  <h3 class="rewiver-name">Olena Kampusch</h3>
+
+                  <p class="rewiev-text">
+                    Chocolate is a family favourite treat. Love the delicious
+                    smooth chocolate and the creaminess inside. The wafer is
+                    soft but crunchy.
+                  </p>
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!-- SLIDER -->
 
           <ul class="rewievs-list">
             <li class="rewiews-list-item">
@@ -427,8 +616,10 @@
         </div>
       </section>
     </main>
+    <!-- =============================================
+                FOOTER
+    ============================================ -->
 
-    <!-- ____________ FOOTER ____________ -->
     <footer class="footer-wrapper">
       <div class="container">
         <div class="footer-top-part">
@@ -456,33 +647,108 @@
           </address>
         </div>
 
-        <nav class="footer-nav">
-          <ul class="nav-list footer-nav-list">
-            <li class="nav-list-item">
-              <a class="nav-link footer-nav-link" href="./index.html">Home</a>
+        <div class="footer-bottom-part">
+          <nav class="footer-nav">
+            <ul class="nav-list footer-nav-list">
+              <li class="nav-list-item">
+                <a class="nav-link footer-nav-link" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-list-item">
+                <a class="nav-link footer-nav-link" href="#how-its-made"
+                  >How it’s made?</a
+                >
+              </li>
+
+              <li class="nav-list-item footer-mob-list-item">
+                <a class="nav-link footer-nav-link" href="">Our products</a>
+              </li>
+
+              <li class="nav-list-item footer-mob-list-item">
+                <a class="nav-link footer-nav-link" href="">Top sellers</a>
+              </li>
+
+              <li class="nav-list-item">
+                <a class="nav-link footer-nav-link" href="#rewievs"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <form class="footer-form">
+            <input
+              class="footer-subs-input"
+              type="email"
+              name="user-email"
+              title="example@gmail.com"
+              placeholder="Enter your email"
+            />
+
+            <button class="footer-subs-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- =============================================
+                MOBILE-MENU
+    ============================================ -->
+
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="close-menu-btn" type="button">
+          <svg class="close-menu-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-close-cross"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item">
+              <a href="./index.html" class="mobile-menu-nav-link">Home</a>
             </li>
 
-            <li class="nav-list-item">
-              <a class="nav-link footer-nav-link" href="#how-its-made"
+            <li class="mobile-menu-nav-item">
+              <a href="#how-its-made" class="mobile-menu-nav-link"
                 >How it’s made?</a
               >
             </li>
 
-            <li class="nav-list-item">
-              <a class="nav-link footer-nav-link" href="#rewievs"
+            <li class="mobile-menu-nav-item">
+              <a href="#reviews" class="mobile-menu-nav-link"
                 >Chocolate is loved</a
               >
             </li>
           </ul>
         </nav>
-      </div>
-    </footer>
 
-    <!-- ____________ MODAL OVERLAY ____________ -->
-    <div class="modal-overlay">
+        <ul class="mobile-menu-socials-list">
+          <li class="mobile-menu-socials-item">
+            <a class="mobile-menu-socials-item-link" href="">
+              <svg width="22" height="22">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-socials-item">
+            <a class="mobile-menu-socials-item-link" href="">
+              <svg width="22" height="22">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- =============================================
+                MODAL OVERLAY
+    ============================================ -->
+
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="close-modal-btn" type="button">
-          <svg class="close-modal-icon" width="28" height="28">
+          <svg class="close-modal-icon">
             <use href="./images/icons.svg#icon-close-cross"></use>
           </svg>
         </button>
@@ -502,7 +768,7 @@
               title="Volodymyr"
               required
             />
-            <svg class="modal-form-input-icon" width="24" height="24">
+            <svg class="modal-form-input-icon">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
           </label>
@@ -516,7 +782,7 @@
               title="example@gmail.com"
               required
             />
-            <svg class="modal-form-input-icon" width="24" height="24">
+            <svg class="modal-form-input-icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </label>
@@ -531,12 +797,12 @@
               title="Use numbers [0-9]"
               required
             />
-            <svg class="modal-form-input-icon" width="24" height="24">
+            <svg class="modal-form-input-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </label>
 
-          <label class="modal-form-label">
+          <label class="modal-form-label modal-form-textarea-label">
             Comment
             <textarea
               class="modal-form-textarea"
@@ -554,17 +820,47 @@
               value="true"
               required
             />
-            <span class="own-checkbox-square">
-              <svg class="own-checkbox-icon" width="10" height="10">
-                <use href="./images/icons.svg#icon-check-mark"></use>
-              </svg> </span
-            >I accept the terms and conditions of the
-            <a class="privacy-policy-link" href="">Privacy Policy</a>
+            <div class="privacy-policy-checkbox-wrapper">
+              <span class="own-checkbox-square">
+                <svg class="own-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check-mark"></use>
+                </svg>
+              </span>
+
+              <span class="privacy-policy-text"
+                >I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="">Privacy Policy</a>
+              </span>
+            </div>
           </label>
 
           <button class="send-form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
